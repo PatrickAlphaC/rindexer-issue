@@ -1,0 +1,15 @@
+[
+    {
+        "type": "function",
+        "name": "emitEvent",
+        "inputs": [],
+        "outputs": [],
+        "stateMutability": "nonpayable"
+    },
+    {
+        "type": "event",
+        "name": "Hi",
+        "inputs": [],
+        "anonymous": false
+    }
+]
