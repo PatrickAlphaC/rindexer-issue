@@ -1,66 +1,23 @@
-## Foundry
+You'll see the error associated with https://github.com/joshstevens19/rindexer/issues/172
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+1. clone the repo:
 
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+```
+git clone https://github.com/PatrickAlphaC/rindexer-issue
+cd rindexer-issue
 ```
 
-### Test
+2. Start the anvil chain
 
-```shell
-$ forge test
+```
+anvil --load-state small.json
 ```
 
-### Format
+3. Start the indexer
 
-```shell
-$ forge fmt
+```
+cd smallIndexer
+rindexer start indexer
 ```
 
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+You'll see the error!
