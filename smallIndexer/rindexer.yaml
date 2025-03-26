@@ -4,6 +4,9 @@ networks:
 - name: anvil
   chain_id: 31337
   rpc: http://127.0.0.1:8545
+# - name: sepolia
+#   chain_id: 11155111
+#   rpc: ${SEPOLIA_RPC_URL}
 storage:
   csv:
     enabled: true
@@ -16,6 +19,9 @@ contracts:
   - network: anvil
     address: 0x5FbDB2315678afecb367f032d93F642f64180aa3
     start_block: '0'
+  # - network: sepolia
+  #   address: 0x472fd0039FDD02BcA13a34DaBa788ed1e82bb9A6
+  #   start_block: '7987727'
   abi: ./abis/Counter.abi.json
   include_events:
   - Hi

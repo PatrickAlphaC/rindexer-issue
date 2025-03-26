@@ -16,7 +16,7 @@ anvil --load-state small.json
 3. Start the indexer
 
 ```
-cd smallIndexer
+cd csvIndexer
 rindexer start indexer
 ```
 
